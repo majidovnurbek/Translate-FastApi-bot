@@ -44,9 +44,6 @@ while 1:
         await message.answer(f'{a}', reply_markup=back_button)
 
 
-    @dp.message(F.text == '🔙back🔙')
-    async def back(mes: Message):
-        await mes.answer('stopped', reply_markup=language)
 
 
     class uzbek_language(StatesGroup):
